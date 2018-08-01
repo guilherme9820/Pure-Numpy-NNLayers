@@ -115,5 +115,5 @@ def softmax(x):
     return e_x / e_x.sum(axis=0) # only difference
 
 def LeakyReLU(x, alpha): ### Leaky Rectified Linear Unit activation
-    ## If 'alpha' is equal to zero, then it becomes a normal ReLU 
+    ## If 'alpha' is equal to zero, then it becomes a standard ReLU 
     return np.maximun(x, alpha*x)
